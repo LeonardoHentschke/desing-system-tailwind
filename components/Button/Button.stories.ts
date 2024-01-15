@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react"
 import Button, { ButtonProps } from "./Button"
 
 const meta: Meta<ButtonProps> = {
-    title: 'Moleculas/Botão',
+    title: 'Molecules/Button',
     component: Button,
     argTypes: {
         children: {
@@ -47,6 +47,21 @@ export const SecondaryDisabled: StoryObj<ButtonProps> = {
     }
 }
 
+export const Tertiary: StoryObj<ButtonProps> = {
+    args: {
+        children: 'Botão',
+        variant: 'tertiary'
+    }
+}
+
+export const TertiaryDisabled: StoryObj<ButtonProps> = {
+    args: {
+        children: 'Botão',
+        variant: 'tertiary',
+        disabled: true
+    }
+}
+
 export const Violet: StoryObj<ButtonProps> = {
     args: {
         children: 'Botão',
@@ -62,3 +77,10 @@ export const VioletSecondary: StoryObj<ButtonProps> = {
     }
 }
 
+export const VioletTertiary: StoryObj<ButtonProps> = {
+    args: {
+        children: 'Botão',
+        className: 'theme-violet',
+        variant: 'tertiary'
+    }
+}
