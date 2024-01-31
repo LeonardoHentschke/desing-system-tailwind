@@ -1,6 +1,5 @@
 import React from 'react'
 import classNames from 'classnames';
-import {black} from "next/dist/lib/picocolors";
 
 export type DividerProps = {
     width?: string;
